@@ -1,4 +1,6 @@
 /* 
+ Note: 1/2
+
  @params string s, string t
  @return bool
 
@@ -18,7 +20,7 @@
         return false;
     }
  *
- * Efficeint:
+ * Efficient:
  * time O(n) space O(n) 
  1. one pass to put s in a map with value of freq
  2. second pass to put t in a map with value of freq
