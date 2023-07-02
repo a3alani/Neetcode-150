@@ -6,7 +6,7 @@
  * always solution
  * same index can not be used twice
  * 
- * solution:
+ * solution: time O(n) space O(n)
  1. iterate through array
  2. find the complement of target and element at i
  3. if complement in map, return index of element at i and value of key from map
