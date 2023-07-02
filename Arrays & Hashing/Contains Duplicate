@@ -7,7 +7,7 @@
  * atleast twice
  * 
  Solution
- *  Brute Fore O(n^2): iterate twice and compare elements with each other
+ *  Brute Fore time O(n^2) space O(1): iterate twice and compare elements with each other
     bool containsDuplicate(vector<int>& nums) {
         int size = nums.size();
         for(int i = 0; i < size-1; i++){
@@ -30,17 +30,18 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        unordered_map<int, int> numsMap;
+        unordered_set<int> numsSet;
 
         for(int i = 0; i < nums.size(); i++){
-            if(numsMap.find(nums[i]) != numsMap.end()){ // if not equal then element found
+            if(numsSet.find(nums[i]) != numsSet.end()){  //if not equal then found 
                 return true;
             }
-            numsMap.insert(pair<int, int>(nums[i], i));
+            numsSet.insert(nums[i]);
         }
         return false;
     }
 };
+
 
 
 
