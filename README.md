@@ -1,3 +1,3 @@
 # Neetcode-150
 
-My solutions to Neetcode 150 leetcode problems
+My solutions to Neetcode 150 leetcode problems in c++
